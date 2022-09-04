@@ -70,7 +70,9 @@ def predict(prompt, steps, cfg_scale, width, height, num_batches=1, batch_size=1
         "",
         width,
         height,
-        None
+        None,
+        0,
+        ""
     ]
 })
     return response.json()
