@@ -215,7 +215,7 @@ def predict(prompt:str, steps:int, cfg_scale:float, width:int, height:int, num_b
         checkHeight(height)
         checkNumBatches(num_batches)
         checkBatchSize(batch_size)
-        if function_index == FunctionIndex.IMAGE_TO_IMAGE or FunctionIndex.IMAGE_TO_IMAGE_WITH_MASK:
+        if function_index == FunctionIndex.IMAGE_TO_IMAGE or function_index == FunctionIndex.IMAGE_TO_IMAGE_WITH_MASK:
             checkImageString(image_string)
             checkStrength(strength)
             if function_index== FunctionIndex.IMAGE_TO_IMAGE_WITH_MASK:
